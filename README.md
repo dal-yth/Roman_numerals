@@ -6,13 +6,13 @@ Avarko code challenge. Program that takes roman numerals as parameter and conver
 - Validation of input
 
 ### Value guide
-- **M** == 1000
-- **D** == 500
-- **C** == 100
-- **L** == 50
-- **X** == 10
-- **V** == 5
-- **I** == 1
+- **M** = 1000
+- **D** = 500
+- **C** = 100
+- **L** = 50
+- **X** = 10
+- **V** = 5
+- **I** = 1
 
 ### Math
 This was the easy part. Assignment only asked to support I, V, X, L, C, D and M numerals so I only had to deal with addition and subtraction. The basic idea is as follows: we have positive total and negative total, if next value in the list is larger than current one, I know the operation is subtraction and I can add the current value to the negative total. If the next value is equal or smaller than current value, I add the value to the positive total. Once all values have been added to their respective totals, simply subtracting the negative total from positive total gives the correct total value.
